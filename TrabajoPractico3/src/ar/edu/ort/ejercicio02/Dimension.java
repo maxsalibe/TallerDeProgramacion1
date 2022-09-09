@@ -1,4 +1,4 @@
-package ar.edu.ort.ejercicio02PruebaX;
+package ar.edu.ort.ejercicio02;
 
 public class Dimension {
 	private int alto;

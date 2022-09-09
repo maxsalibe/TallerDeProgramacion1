@@ -1,4 +1,4 @@
-package ar.edu.ort.ejercicio02PruebaX.archivos;
+package ar.edu.ort.ejercicio02.archivos;
 
 public class Archivo {
 	private String nombre;
