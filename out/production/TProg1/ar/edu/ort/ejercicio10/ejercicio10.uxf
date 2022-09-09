@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Puerto
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>250</y><w>210</w><h>190</h></coordinates><panel_attributes>Amarra
+-
+- numero: int
+- ubicacion: String
+- disponible: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>180</y><w>130</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+- amarras
+m1=0..*</panel_attributes><additional_attributes>10;70;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>250</y><w>210</w><h>190</h></coordinates><panel_attributes>/Barco/
+-
+- valorBase: float
+- valorAdicional: float
+- matricula: String
+- eslora: int
+- anioFabricacion: int
+- nombreDuenio: String
+-
++ precioBase(): float
+# getValorAdicional(): float
+/+ adicional(): float/
++ alquiler(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>280</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- barco
+m1=0..1</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>BarcoVelero
+-
+- mastiles: int
+-
++ adicional(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>510</y><w>260</w><h>190</h></coordinates><panel_attributes>BarcoDeportivo
+-
+_+ INDICE_CALCULO_POTENCIA: float = 0.35_
+- potenciaMotor: int
+- factorAerodinamico: int
+-
++ adicional(): float
++ calcularConsumo(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>BarcoYate
+-
+- camarotes: int
+-
++ adicional(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>430</y><w>330</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>430</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>430</y><w>230</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>780</y><w>210</w><h>190</h></coordinates><panel_attributes>BarcoDeportivoDeLujo
+-
++ calcularConsumo(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>690</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element></diagram>
