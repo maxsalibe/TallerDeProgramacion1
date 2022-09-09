@@ -1,6 +1,6 @@
-package ar.edu.ort.ejercicio02Prueba.archivos;
+package ar.edu.ort.ejercicio02PruebaX.archivos;
 
-import ar.edu.ort.ejercicio02Prueba.FormatoAudio;
+import ar.edu.ort.ejercicio02PruebaX.FormatoAudio;
 
 public class ArchivoAudio extends ArchivoMultimedia {
 	private String artista;

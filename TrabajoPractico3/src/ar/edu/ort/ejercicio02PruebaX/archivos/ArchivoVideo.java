@@ -1,7 +1,7 @@
-package ar.edu.ort.ejercicio02Prueba.archivos;
+package ar.edu.ort.ejercicio02PruebaX.archivos;
 
-import ar.edu.ort.ejercicio02Prueba.Dimension;
-import ar.edu.ort.ejercicio02Prueba.FormatoVideo;
+import ar.edu.ort.ejercicio02PruebaX.Dimension;
+import ar.edu.ort.ejercicio02PruebaX.FormatoVideo;
 
 public class ArchivoVideo extends ArchivoMultimedia {
 	

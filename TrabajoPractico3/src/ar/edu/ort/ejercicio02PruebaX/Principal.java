@@ -1,10 +1,10 @@
-package ar.edu.ort.ejercicio02Prueba;
+package ar.edu.ort.ejercicio02PruebaX;
 
 import java.util.ArrayList;
 
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoAudio;
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoTexto;
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoVideo;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoAudio;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoTexto;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoVideo;
 
 public class Principal {
 

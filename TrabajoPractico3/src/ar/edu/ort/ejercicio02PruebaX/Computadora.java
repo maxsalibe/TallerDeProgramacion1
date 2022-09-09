@@ -1,12 +1,12 @@
-package ar.edu.ort.ejercicio02Prueba;
+package ar.edu.ort.ejercicio02PruebaX;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import ar.edu.ort.ejercicio02Prueba.archivos.Archivo;
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoMultimedia;
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoTexto;
-import ar.edu.ort.ejercicio02Prueba.archivos.ArchivoVideo;
+import ar.edu.ort.ejercicio02PruebaX.archivos.Archivo;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoMultimedia;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoTexto;
+import ar.edu.ort.ejercicio02PruebaX.archivos.ArchivoVideo;
 
 public class Computadora {
 	private ArrayList<Archivo> archivos;

@@ -1,4 +1,4 @@
-package ar.edu.ort.ejercicio02Prueba.archivos;
+package ar.edu.ort.ejercicio02PruebaX.archivos;
 
 public class ArchivoTexto extends Archivo {
 	private String codificacion;
