@@ -1,6 +1,6 @@
 package ar.edu.ort.ejercicio11;
 
-// Clase de prueba. Testeado el 2022-09-09. Funciona correctamente.
+// Clase de prueba. Testeado el 2022-09-10. Funciona correctamente.
 public class Principal {
     public static void main(String[] args) {
         Comercio c = new Comercio();
