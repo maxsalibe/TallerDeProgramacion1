@@ -15,7 +15,7 @@ public class Estacion {
     }
 
     public static int dameHoraActual() {
-        return LocalTime.now().getHour() + 3;
+        return LocalTime.now().getHour();
     }
 
     public ArrayList<Cabina> cabinasConEfectivo() {
