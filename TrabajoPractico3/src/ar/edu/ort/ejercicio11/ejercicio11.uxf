@@ -1,0 +1,61 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>270</y><w>270</w><h>190</h></coordinates><panel_attributes>Insumo
+-
+- nombre: String
+- porcentajeGanancia: double
+- precioLista: double
+-
++ Insumo(TipoInsumo, String, double, double)
++ facturacion(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>540</y><w>100</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoInsumo
+-
+_+ PERIFERICO_
+_+ HARDWARE_
+_+ LIMPIEZA_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>450</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+- tipo
+m1=1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>260</y><w>210</w><h>110</h></coordinates><panel_attributes>/Servicio/
+-
+- horas: double
+-
++ Servicio(double)
+- setHoras(double): void
+/+ calcularPrecio(): double/
++facturacion(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>90</y><w>150</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+/Facturable/
+-
+_+ IVA: double = 21_
+-
+/+ facturacion(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>170</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;170;60;170;90</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>170</y><w>200</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>180;10;180;60;10;60;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>50</y><w>270</w><h>110</h></coordinates><panel_attributes>Comercio
+-
+_- DIFICULTAD_MAX_SERV_SIMPLES: int = 1_
+-
++ Comercio()
++ montoTotalFacturado(): double
++ cantServiciosSimples(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>90</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- historialVentas
+m1=0..*</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>460</y><w>230</w><h>190</h></coordinates><panel_attributes>ServicioArmado
+-
+_- VALOR_HORA_ARMADO: double = 250_
+-
++ ServicioArmado(double)
++ calcularPrecio(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>360</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;130;40;10;40;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>460</y><w>260</w><h>190</h></coordinates><panel_attributes>ServicioReparacion
+-
+_- VALOR_HORA_REPARACION: double = 180_
+_- INCREMENTO_DIFICULTAD: double = 25_
+_- DIFICULTAD_MINIMA: int = 1_
+_- DIFICULTAD_MEDIA: int = 3_
+_- DIFICULTAD_MAXIMA: int = 5_
+- dificultad: int
+-
++ ServicioReparacion(double, int)
+- setDificultad(int): void
++ getDificultad(): int
++ calcularPrecio(): double
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>360</y><w>220</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;200;40;200;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>80</y><w>270</w><h>70</h></coordinates><panel_attributes>Matematica
+-
+-
+_+ sumarPorcentaje(double, double): double_</panel_attributes><additional_attributes></additional_attributes></element></diagram>
