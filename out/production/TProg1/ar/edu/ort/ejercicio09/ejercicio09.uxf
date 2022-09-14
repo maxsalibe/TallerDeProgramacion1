@@ -1,0 +1,62 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>30</y><w>250</w><h>190</h></coordinates><panel_attributes>Estacion
+-
+- id: String
+- descripcion: String
+-
+_+ dameHoraActual(): int_
++ cabinasConEfectivo(): ArrayList&lt;Cabina&gt;
++ promedioDemora(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>30</y><w>260</w><h>190</h></coordinates><panel_attributes>Cabina
+-
+_- INICIO_HORA_PICO_1: int = 6_
+_- FIN_HORA_PICO_1: int = 10_
+_- INICIO_HORA_PICO_2: int = 17_
+_- FIN_HORA_PICO_2: int = 20_
+_- INCREMENTO_EN_HORA_PICO: double = 8_
+- numero: int
+-
++ cobrar(Vehiculo): double
++ aceptaEfectivo(): boolean
++ getDemora(): int
+- esHoraPico(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>60</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- cabinas
+m1=*</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>290</y><w>210</w><h>120</h></coordinates><panel_attributes>/MedioDePago/
+-
+- descripcion: String
+-
+/+ getDescuento(): double/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>210</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+- medioDePago
+m1=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>450</y><w>190</w><h>80</h></coordinates><panel_attributes>/MedioDePagoElectronico/
+-
+- diasDeDemora: int
+-
++ getDemora(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>400</y><w>170</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;30;10;30;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>540</y><w>210</w><h>80</h></coordinates><panel_attributes>Sube
+-
+_- DESCUENTO_SUBE: double = 10_
+-
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>460</y><w>170</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>540</y><w>280</w><h>100</h></coordinates><panel_attributes>Pase
+-
+_- DESCUENTO_CON_BAJA_DEMORA: double = 15_
+_- DESCUENTO_CON_ALTA_DEMORA: double = 12_
+_- LIMITE_BAJA_DEMORA: int = 5_
+-
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>460</y><w>180</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;10;160;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>290</y><w>290</w><h>100</h></coordinates><panel_attributes>MedioDePagoEfectivo
+-
+_- DESCUENTO_POR_PAGO_EFECTIVO: double = 0_
+-
++ getDescuento(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>350</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>460</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+CategoriaVehiculo
+-
+_+ AUTO(50)_
+_+ MOTO(30)_
+_+ CAMION(100)_
+- tarifa: double
+-
+- CategoriaVehiculo(double)
++ getTarifa(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>Vehiculo
+-
+- patente: String
+-
++ getTarifa(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>350</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+- categoria
+m1=1</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>210</y><w>640</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;30;620;30;620;10</additional_attributes></element></diagram>
