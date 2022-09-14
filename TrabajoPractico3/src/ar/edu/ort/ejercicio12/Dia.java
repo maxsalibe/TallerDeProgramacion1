@@ -12,6 +12,10 @@ public class Dia {
         personas = new ArrayList<>();
     }
 
+    /*
+    @param limite de personas y mensaje para notificar.
+    @return la cantidad de personas que fueron notificadas de que se les cancelo.
+     */
     public int revisar(int cupo, String mensaje) {
         int cancelados = 0;
         if (personas.size() > cupo) {
@@ -39,13 +43,28 @@ public class Dia {
         }
         return i;
     }
+
+    /*  Forma indicada por Cimino
+
+    	public int getCantPersonasConPrioridad(int nroPrioridad) {
+		int cant = 0;
+		for (Persona persona : personas) {
+			if (persona.getPrioridad() == nroPrioridad) {
+				cant++;
+			}
+		}
+		return cant;
+	}
+     */
     public double promedioEdadPersonasSinOS() {
         int acumEdades = 0;
         int contadorPersonas = 0;
         for (Persona p :
                 personas) {
-            acumEdades += p.getEdad();
-            contadorPersonas++;
+            if (p.tieneObraSocial()) {
+                acumEdades += p.getEdad();
+                contadorPersonas++;
+            }
         }
         return contadorPersonas != 0 ? acumEdades * 1.0 / contadorPersonas : 0;
     }

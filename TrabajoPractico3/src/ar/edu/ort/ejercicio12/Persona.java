@@ -10,6 +10,7 @@ public class Persona implements Priorizable, Notificable {
     private int edad;
     private Motivo motivo;
 
+
     /*
     Solo lo necesario para testear.
     */
@@ -35,5 +36,9 @@ public class Persona implements Priorizable, Notificable {
 
     protected Motivo getMotivo() {
         return this.motivo;
+    }
+
+    public boolean tieneObraSocial() {
+        return this instanceof PersonaConObraSocial;
     }
 }

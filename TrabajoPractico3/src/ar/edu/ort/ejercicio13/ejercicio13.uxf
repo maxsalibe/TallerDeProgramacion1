@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>100</x><y>30</y><w>210</w><h>190</h></coordinates><panel_attributes>Programa
+-
+- id: String
+- nombre: String
+- responsable: String
+- pasoPruebasUnitarias: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>30</y><w>210</w><h>190</h></coordinates><panel_attributes>/Fuente/
+-
+- nombre: String
+- path: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>70</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- fuentes
+m1=1..*</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>FuenteProgramacion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>290</y><w>210</w><h>190</h></coordinates><panel_attributes>FuenteMarcado</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>500</y><w>210</w><h>190</h></coordinates><panel_attributes>Metodo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>210</y><w>210</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;190;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>210</y><w>200</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;180;40;180;80</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>320</y><w>200</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+- metodos
+m1=1..*</panel_attributes><additional_attributes>10;180;10;10;180;10</additional_attributes></element></diagram>
