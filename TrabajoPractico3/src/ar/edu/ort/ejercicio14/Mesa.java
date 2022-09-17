@@ -7,6 +7,7 @@ public class Mesa {
 
     public Mesa(int numero) {
         this.numero = numero;
+        libre = true;
     }
 
     public void cerrarMesa() {
@@ -23,5 +24,9 @@ public class Mesa {
                 "numero=" + numero +
                 ", libre=" + libre +
                 '}';
+    }
+
+    public void marcarOcupada() {
+        libre = false;
     }
 }

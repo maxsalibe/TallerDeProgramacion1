@@ -18,5 +18,6 @@ public class Mozo extends EmpleadoConvenio {
                               ArrayList<ItemMenu> items,
                               Restaurante r) {
         r.agregarPedido(new Pedido(this, me, fp, c, items));
+        me.marcarOcupada();
     }
 }
