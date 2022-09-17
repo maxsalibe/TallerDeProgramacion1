@@ -5,6 +5,12 @@ public class Plato extends ItemMenu {
     private boolean esVegano;
     private boolean esAptoCeliaco;
 
+    public Plato(String nombre, double precio, boolean esVegano, boolean esAptoCeliaco) {
+        super(nombre, precio);
+        this.esVegano = esVegano;
+        this.esAptoCeliaco = esAptoCeliaco;
+    }
+
     @Override
     public double aplicarDescuento(double precio) {
         double precioConDescuento = precio;

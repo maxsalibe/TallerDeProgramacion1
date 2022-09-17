@@ -7,13 +7,16 @@ import java.util.ArrayList;
 public class Mozo extends EmpleadoConvenio {
     private CategoriaMozo categoria;
 
-    // Para testearlo, agrego en el constructor un restaurante
+    public Mozo(String nombre, String legajo) {
+        super(nombre, legajo);
+    }
+
+    // Para testearlo, agrego en el metodo un restaurante
     public void tomarPedido(Mesa me,
-                              Mozo mo,
                               Cocinero c,
                               FormaPago fp,
                               ArrayList<ItemMenu> items,
                               Restaurante r) {
-        r.agregarPedido(new Pedido(mo, me, fp, c, items));
+        r.agregarPedido(new Pedido(this, me, fp, c, items));
     }
 }

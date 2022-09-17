@@ -52,4 +52,15 @@ public class Pedido {
         }
         return cant;
     }
+
+    @Override
+    public String toString() {
+        return "\nPedido{" +
+                "mozo=" + mozo +
+                ", \nmesa=" + mesa +
+                ", \nformaPago=" + formaPago +
+                ", \ncocinero=" + cocinero +
+                ", \nitems=" + items +
+                '}';
+    }
 }

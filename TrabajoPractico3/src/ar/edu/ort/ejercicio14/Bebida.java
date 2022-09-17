@@ -4,6 +4,11 @@ public class Bebida extends ItemMenu {
     private double tamanio;
     private boolean tieneAlcohol;
 
+    public Bebida(String nombre, double precio, boolean tieneAlcohol) {
+        super(nombre, precio);
+        this.tieneAlcohol = tieneAlcohol;
+    }
+
     @Override
     public double aplicarDescuento(double precio) {
         double precioConDescuento = precio;

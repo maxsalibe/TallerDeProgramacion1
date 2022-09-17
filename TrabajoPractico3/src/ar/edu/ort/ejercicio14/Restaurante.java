@@ -14,6 +14,13 @@ public class Restaurante {
     private ArrayList<ItemMenu> menu;
     private ArrayList<Pedido> pedidos;
 
+    public Restaurante() {
+        mesas = new ArrayList<>();
+        empleados = new ArrayList<>();
+        menu = new ArrayList<>();
+        pedidos = new ArrayList<>();
+    }
+
     public void pedidosPorCocinero(String legajo) {
         System.out.println("El cocinero legajo nro " + legajo +
                 " tiene los siguientes pedidos a su cargo:");
@@ -27,7 +34,7 @@ public class Restaurante {
 
     public void liberarMesa(int numeroMesa) {
         Pedido p = buscarPedidoDeLaMesa(numeroMesa);
-        System.out.printf("Importe a abonar por la mesa %d: $ %.2f.", numeroMesa, p == null ? 0 : p.obtenerTotal());
+        System.out.printf("\nImporte a abonar por la mesa %d: $ %.2f.\n", numeroMesa, p == null ? 0 : p.obtenerTotal());
     }
 
     public Pedido pedidoConMasBebidas(FormaPago fp) {
@@ -59,5 +66,11 @@ public class Restaurante {
     // Para test
     public void agregarPedido(Pedido p) {
         this.pedidos.add(p);
+    }
+    public void agregarItemMenu(ItemMenu i) {
+        menu.add(i);
+    }
+    public void agregarEmpleado(Empleado e) {
+        empleados.add(e);
     }
 }
