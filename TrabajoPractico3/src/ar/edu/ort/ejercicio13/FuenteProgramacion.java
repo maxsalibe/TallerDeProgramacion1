@@ -5,6 +5,11 @@ import java.util.ArrayList;
 public class FuenteProgramacion extends Fuente {
     private ArrayList<Metodo> metodos;
 
+    public FuenteProgramacion(String nombre, String path) {
+        super(nombre, path);
+        metodos = new ArrayList<>();
+    }
+
     @Override
     public double indiceCalidad() {
         double acum = 0;
@@ -26,5 +31,10 @@ public class FuenteProgramacion extends Fuente {
             }
         }
         return m;
+    }
+
+    // para test
+    public void agregarMetodo(Metodo m) {
+        metodos.add(m);
     }
 }

@@ -9,6 +9,14 @@ public class Programa implements Calificable {
     private boolean pasoPruebasUnitarias;
     private ArrayList<Fuente> fuentes;
 
+    public Programa(String id, String nombre, String responsable, boolean pasoPruebasUnitarias) {
+        this.id = id;
+        this.nombre = nombre;
+        this.responsable = responsable;
+        this.pasoPruebasUnitarias = pasoPruebasUnitarias;
+        fuentes = new ArrayList<>();
+    }
+
     @Override
     public double indiceCalidad() {
         return pasoPruebasUnitarias ? promedioIndiceFuentes() : 0;
@@ -52,5 +60,22 @@ public class Programa implements Calificable {
             }
         }
         return m;
+    }
+
+    // Para test
+    public void agregarFuente (Fuente f) {
+        fuentes.add(f);
+    }
+
+    @Override
+    public String toString() {
+        return "\nPrograma{" +
+                "id='" + id + '\'' +
+                ", \n\tnombre='" + nombre + '\'' +
+                ", \n\tresponsable='" + responsable + '\'' +
+                ", \n\tpasoPruebasUnitarias=" + pasoPruebasUnitarias +
+                ", \n\tfuentes=" + fuentes +
+                ", \n\tindiceCalidad=" + String.format("%.2f", indiceCalidad()) +
+                '}';
     }
 }
