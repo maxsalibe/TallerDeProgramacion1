@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>40</y><w>210</w><h>100</h></coordinates><panel_attributes>Sitio
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>290</y><w>280</w><h>110</h></coordinates><panel_attributes>Inmobiliaria
+-
+_- ENCABEZADO: String = "Hemos recibido un_
+_mail a nuestra casilla %s con el mensaje:"_
+- porcentajeComision: double
+-
++ notificar(String, double, double): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>50</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- usuarios
+m1=*</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>290</y><w>280</w><h>150</h></coordinates><panel_attributes>Cliente
+-
+_- ENCABEZADO: String = "He recibido un SMS en_
+_mi telefono %s con el mensaje "_
+- apellido: String
+- telefono: String
+-
++ notificar(String, double, double): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>530</y><w>210</w><h>130</h></coordinates><panel_attributes>Inmueble
+-
+- domicilio: String
+- superficie: double
+- ambientes: int
+- precio: double
+-
++ setPrecio(double): void
++ toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>390</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+- inmuebles
+m1=*</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>30</y><w>320</w><h>140</h></coordinates><panel_attributes>/Usuario/
+-
+_+ MENSAJE_GENERAL: String = "El inmueble %s por_
+_el que ha demostrado interés cambió su precio_
+_de %f a %f."_
+- nombre: String
+- mail: String
+-
+/+ notificar(String, double, double): void/
++ getMail(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>160</y><w>210</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>190;10;190;40;10;40;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>160</y><w>190</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40;170;130</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>110</y><w>240</w><h>480</h></coordinates><panel_attributes>lt=&lt;-
+- interesados
+m1=*</panel_attributes><additional_attributes>10;10;150;10;150;460;120;460</additional_attributes></element></diagram>
