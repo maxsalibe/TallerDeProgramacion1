@@ -5,10 +5,14 @@ import interfaces.Mostrable;
 
 public abstract class OpcionDeMenu implements Mostrable, Ejecutable {
     private String descripcion;
-    private char caracter;
+    private char charSelector;
 
     public OpcionDeMenu(String descripcion, char caracter) {
         this.descripcion = descripcion;
-        this.caracter = caracter;
+        this.charSelector = caracter;
+    }
+
+    public char getCharSelector() {
+        return charSelector;
     }
 }
